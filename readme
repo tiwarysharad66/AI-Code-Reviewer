@@ -1,0 +1,77 @@
+User sends its code to the server 
+//code instruction to ai like best practices changes ai will process
+request and serverwith the help of ai gemini ai 2.0
+//server with the help of ai
+//google gemini 2.0
+///generate best practices for the code 
+//ai process that and generate a review and send to the server
+//
+like if we write any code 
+it will suggest some improvements and errors and bugs 
+maybe the code is technically correct still it helps to improve the code 
+backend + frontend
+
+ API develop for ai interaction then frontend sa integrate
+
+//server setup using express 1
+2 Ai integrate ai.google.dev
+when data is too mcuh and like we send code from frontend to backend and data is too much then we use post method
+method change and data come if we follow rest api come in req.body
+and if we use req.body then we need to use middleware app.use express.json();
+without that req.body give undefined;
+
+we need to define ai what user want him to do
+like code review improvements where it fail and all and we give code it will give review
+system instructions
+
+
+
+
+this ai gave 
+❌ Bad Code:
+```javascript
+function sum(){ return a+b; }
+```
+
+🔍 Issues:
+* ❌ The function `sum` attempts to add `a` and `b` without them being defined within the function or passed as
+arguments. This will lead to errors because `a` and `b` are not in scope.
+* ❌ The function doesn't account for the possibility of `a` or `b` not being numbers, which could lead to unexpected
+behavior or errors.
+* ❌ The function lacks clarity about where `a` and `b` are supposed to come from, reducing its reusability and making it
+harder to understand.
+
+✅ Recommended Fix:
+
+```javascript
+function sum(a, b) {
+if (typeof a !== 'number' || typeof b !== 'number') {
+return "Error: Both arguments must be numbers.";
+}
+return a + b;
+}
+```
+
+💡 Improvements:
+
+* ✔ The function now accepts two arguments, `a` and `b`, making it clear what values it operates on.
+* ✔ Type checking is included to ensure that both arguments are numbers, preventing unexpected results or errors if
+non-numeric values are passed.
+* ✔ Error handling is implemented to return an error message if either argument is not a number, providing feedback to
+the user of the function.
+* ✔ The function is now self-contained and reusable, as it doesn't rely on external variables.
+
+
+/// review of ai depends on How Good System Instruction is 
+For ai it always instruction if it is good then llm work good and second its context 
+not in this we are not using context
+//we also need error handling 
+//frontend and integration
+//this was all backend 
+45:21 
+prism js for showing code in highlighted way
+react simple code editor for editing code on website and then use axios package for integrating frontend with backend
+review aayega ab but ek package to right side review ko ache tareeke sa dikhayega 
+react markdown
+render markdown file 
+package npm i react markdown
